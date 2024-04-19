@@ -1,4 +1,4 @@
-import { useAppStore } from "../../store";
+import { useAppStore } from "@/store";
 import "./qtyBtn.module.css";
 
 const QtyBtn = ({ item }) => {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useAppStore } from "../../store";
+import { useAppStore } from "@/store";
 import "./searchBox.module.css";
 import { FiSearch } from "react-icons/fi";
 

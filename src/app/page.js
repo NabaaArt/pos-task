@@ -4,8 +4,6 @@ import { Image, Card, CardBody, CardFooter, Button } from "@nextui-org/react";
 import styles from "./page.module.css";
 import AppContainer from "@/components/Contaner/container";
 import { useEffect, useState } from "react";
-import Space from "@/components/Space";
-
 
 export default function Home() {
   const [cart, setCart] = useState([]);
@@ -13,8 +11,8 @@ export default function Home() {
   const [cats, setCats] = useState([]);
 
   const getProducts = async (cat) => {
-    let url = "http://localhost:3000/api/products";
-    if (cat) url = `http://localhost:3000/api/products?cat=${cat}`;
+    let url = "http://localhost:3001/api/products";
+    if (cat) url = `http://localhost:3001/api/products?cat=${cat}`;
 
     try {
       let res = await fetch(url);
